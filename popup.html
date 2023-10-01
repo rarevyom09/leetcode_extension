@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LeetCode Page URL</title>
+  <script src="popup.js"></script>
+  <style>
+    body{
+      background-color: rgb(58, 58, 58);
+    }
+    #url {
+      /* display: none; */
+      color: blueviolet;
+    }
+
+    .video-container {
+      /* width: 300px; */
+      border: 2px solid #313131;
+      border-radius: 5px;
+      background-color: #000000;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center; /* Center align video container */
+    }
+
+    .video-title {
+      color: white;
+      font-size: 18px; /* Increase font size for video titles */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      margin: 10px 0; /* Adjust spacing around video titles */
+      white-space: nowrap; /* Prevent text from wrapping */
+      overflow: hidden; /* Hide overflowing text */
+      text-overflow: ellipsis; /* Show ellipsis for long titles */
+    }
+    #made-by {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(0, 0, 0);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .info{
+      color: aliceblue;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="info">Some videos may be irrelevant</p>
+  
+  <p id="url"></p>
+  <div id="results">
+  <div id="pname"></div>
+    <!-- Sample video container -->
+    <div id="video-container">
+
+      <!-- <iframe id="youtube-player" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe> -->
+    </div>    
+  </div>
+
+  <div id="made-by">Developed by - Vyom Padalia</div>
+</body>
+</html>

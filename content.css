@@ -1,0 +1,10 @@
+/* content.css */
+
+/* Style for the extension result */
+div {
+    background-color: #f2f2f2;
+    border: 2px solid #3498db;
+    padding: 10px;
+    margin: 20px;
+  }
+  

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "No worries by Vyom",
+  "version": "1.0",
+  "description": "Search and displays YouTube videos for LeetCode",
+  "permissions": [
+    "https://www.googleapis.com/",
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "sun16.png",     
+      "48": "sun48.png",     
+      "128": "sun128.png"   
+    }
+  },
+  "icons": {
+    "16": "sun16.png",         
+    "48": "sun48.png",         
+    "128": "sun128.png"       
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "popup.html"
+  ]
+}
